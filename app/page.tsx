@@ -41,9 +41,10 @@ export default function TextareaForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full max-w-2xl space-y-6">
+    <div className="h-screen flex items-center justify-center p-4 bg-background overflow-hidden">
+      <div className="w-full max-w-2xl">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
           <FormField
             control={form.control}
             name="bio"
@@ -52,13 +53,10 @@ export default function TextareaForm() {
                 <FormControl>
                   <Textarea
                     placeholder="What would you like to read? Enter your text here."
-                    className="resize-none min-h-[400px]"
+                    className="resize-none min-h-[300px]"
                     {...field}
                   />
                 </FormControl>
-                <FormDescription>
-                  Click submit to start reading your text. <Link href="/whatisthis" className="text-blue-500">What Is This</Link>
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -66,6 +64,7 @@ export default function TextareaForm() {
           <Button type="submit" className="w-full">Start Reading</Button>
         </form>
       </Form>
+      </div>
     </div>
   )
 }

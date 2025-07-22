@@ -213,7 +213,7 @@ export default function ReadPage() {
                     key={index}
                     className={`${
                       index === currentWordIndex 
-                        ? 'bg-yellow-300 text-black font-bold' 
+                        ? 'bg-yellow-300 text-black' 
                         : ''
                     }`}
                   >

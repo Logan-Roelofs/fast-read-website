@@ -150,17 +150,6 @@ export function Sidebar({ children }: SidebarProps) {
               </div>
               
               {/* Add Test History Button - For Testing */}
-              <Button
-                onClick={() => {
-                  const testText = "This is a sample text for testing the speed reading functionality. It contains multiple words that will be displayed one at a time in the RSVP format."
-                  handleAddToReadingHistory("Test Article", "/read", testText)
-                }}
-                className="w-full mt-2"
-                variant="outline"
-                size="sm"
-              >
-                Add Test History
-              </Button>
             </nav>
 
             {/* Sidebar Footer */}
@@ -205,7 +194,7 @@ export function Sidebar({ children }: SidebarProps) {
           </div>
 
           {/* Page Content */}
-          <main className="flex-1 overflow-auto">
+          <main className="flex-1 overflow-hidden">
             {children}
           </main>
         </div>
