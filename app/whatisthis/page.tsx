@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function WhatIsThis() {
   return (
     <div className="min-h-screen bg-white py-12 px-4">
@@ -49,12 +51,12 @@ export default function WhatIsThis() {
             </div>
 
             <div className="text-center mt-8">
-              <a 
+              <Link
                 href="/"
                 className="inline-block bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
               >
                 Start Reading with RSVP
-              </a>
+              </Link>
             </div>
           </div>
         </div>

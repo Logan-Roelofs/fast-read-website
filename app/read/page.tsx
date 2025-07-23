@@ -88,11 +88,6 @@ export default function ReadPage() {
     setIsPlaying(!isPlaying)
   }
 
-  const reset = () => {
-    setIsPlaying(false)
-    setCurrentWordIndex(0)
-  }
-
   const saveToHistory = () => {
     if (text) {
       const title = `Reading Session - ${new Date().toLocaleDateString()}`
