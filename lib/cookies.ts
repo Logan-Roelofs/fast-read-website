@@ -29,7 +29,7 @@ export const getReadingHistory = (): ReadingHistoryItem[] => {
   
   try {
     const history = JSON.parse(decodeURIComponent(historyJson))
-    return history.map((item: any) => ({
+    return history.map((item: Omit<ReadingHistoryItem, 'timestamp'> & { timestamp: string }) => ({
       ...item,
       timestamp: new Date(item.timestamp)
     }))

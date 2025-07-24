@@ -3,14 +3,12 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import Link from "next/link"
 import { useRouter } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormMessage,
@@ -23,8 +21,8 @@ const FormSchema = z.object({
     .min(10, {
       message: "Text must be at least 10 characters.",
     })
-    .max(5000, {
-      message: "Text must not be longer than 5000 characters.",
+    .max(100000, {
+      message: "Text must not be longer than 100000 characters.",
     }),
 })
 
