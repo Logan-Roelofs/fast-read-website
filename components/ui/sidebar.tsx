@@ -194,7 +194,7 @@ export function Sidebar({ children }: SidebarProps) {
           </div>
 
           {/* Page Content */}
-          <main className="flex-1 overflow-hidden">
+          <main className={`flex-1 ${pathname === '/' ? 'overflow-hidden' : 'overflow-y-auto'}`}>
             {children}
           </main>
         </div>
