@@ -164,7 +164,7 @@ export function Sidebar({ children }: SidebarProps) {
                   }
                 `}
               >
-                <span className="h-4 w-4 text-center">?</span>
+                <span className="h-4 w-4 flex items-center justify-center text-sm font-medium">?</span>
                 What Is This
               </Link>
             </div>
