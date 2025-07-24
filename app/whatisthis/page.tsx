@@ -27,9 +27,10 @@ export default function WhatIsThis() {
                 <video 
                   className="w-full max-w-2xl mx-auto rounded-lg shadow-md"
                   controls
+                  muted
                   poster="/video-poster.jpg" // Optional: add a poster image
                 >
-                  <source src="/Recording 2025-07-22 160859.mp4" type="video/mp4" />
+                  <source src="/fast-read-website/Recording 2025-07-22 160859.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
